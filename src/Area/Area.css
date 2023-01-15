@@ -1,0 +1,22 @@
+#AreasChart{
+    color: white;
+    background-color: #33373E;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 20px 70px 20px 50px;
+}
+
+#arealegend{
+    background-color: aliceblue;
+}
+
+#AreasChart h3{
+    color: rgb(211, 204, 204);
+    margin: 0;
+}
+#AreasChart h2{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    /* color: rgb(184, 169, 169); */
+}

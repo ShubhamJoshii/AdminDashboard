@@ -1,0 +1,68 @@
+
+.NavbarSide{
+    background-color: #33373E;
+    width: 18vw;
+    height: 120vh;
+    color: rgba(255, 255, 255, 0.756);
+    padding-left: 10px;
+    padding: 10px;
+    z-index: 9999;
+    position: absolute;
+
+    /* overflow: hidden; */
+}
+
+#companyLogo{
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 20px;
+    position: fixed;
+    width: 18vw;
+    height: 60px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33373E;
+    z-index: 99999;
+}
+
+.dashboard{
+    position: absolute;
+    top: 20px;
+    margin-top: 35px;
+}
+
+.NavbarSide h3{
+    color: rgba(255, 255, 255, 0.543);
+    margin: 10px 10px 5px 10px;
+    font-weight: 600;
+    /* margin-left: 20px; */
+}
+
+.NavbarSide ul{
+    margin-top: 0px;
+    list-style: none;
+    margin-left: -30px;
+    margin-right: 10px;
+}
+
+.NavbarSide ul li{
+    cursor: pointer;
+    padding:10px;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+}
+
+.NavbarSide ul li svg{
+    margin-right: 10px;
+}
+
+.NavbarSide ul li:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+}
+
+

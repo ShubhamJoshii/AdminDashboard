@@ -1,0 +1,41 @@
+#ColorPicker{
+    background-color: white;
+    margin-right: 90px;
+    margin-left: 30px;
+    height: 90%;
+    border-radius: 30px;
+    padding: 20px 40px;
+}
+
+#ColorPicker h3,#ColorPicker h2{
+    margin: 0;
+}
+#ColorPicker h3{
+    color: grey;
+    font-weight: 400;
+}
+
+#ColorPicker h2{
+    font-size: 40px;
+}
+
+.ColorPickers{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content:space-between;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.ColorPickers h1{
+    text-align: center;
+
+}
+
+#color{
+    width: 300px;
+    height: 30px;
+
+    margin: 30px auto 50px;
+}

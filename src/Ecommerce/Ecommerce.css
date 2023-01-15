@@ -1,0 +1,150 @@
+.Ecommerce{
+    color: white;
+    /* margin: 10px 30px 10px 10px; */
+}
+
+.Ecommerce #firstLine{
+    display: flex;
+    position: relative;
+    /* left: 50px; */
+    top: 10vh;
+}
+
+
+.Ecommerce #firstLine #Earnings{
+    background-color: white;
+    width: 25pc;
+    height: 25vh;
+    color: rgb(87, 85, 85);
+    border-radius: 20px;
+}
+
+#Earnings{
+    margin-right: 100px;
+}
+
+#EarningFirst{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin:30px 20px;
+    
+}
+
+#EarningFirst h3{
+    margin: 0;
+}
+
+#EarningFirst h2{
+    color: grey;
+    font-weight: 400;
+    margin: 0;
+}
+
+#EarningFirst a{
+    background-color: #1A97F5;
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 20px;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#Earnings button{
+    background-color: #1A97F5;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin-left: 60px;
+    font-size: 20px;
+}
+
+#Assets{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 0px;
+}
+
+.AssetsCards{
+    width: 15pc;
+    height: 23vh;
+    background-color:rgba(255, 255, 255, 0.158);
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    
+}
+
+.AssetsCards h2{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.AssetsCards h3{
+    margin: 0;
+    font-weight: 200;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+#AssetLogo1{
+    background-color: #E5FAFB;
+    font-size: 45px;
+    padding: 8px;
+    border-radius: 50%;
+    color: #03C9D7;
+    margin: 30px  0px 0px 20px;
+    cursor: pointer;
+}
+
+#AssetLogo2{
+    background-color: #FEC90F;
+    font-size: 45px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 30px  0px 0px 20px;
+}
+
+#AssetLogo3{
+    background-color: #FFF4E5;
+    cursor: pointer;
+    font-size: 45px;
+    padding: 8px;
+    border-radius: 50%;
+    margin: 30px  0px 0px 20px;
+    color: #EB8C91;
+}
+
+#AssetLogo4{
+    background-color: #EBFAF2;
+    cursor: pointer;
+    font-size: 45px;
+    padding: 8px;
+    border-radius: 50%;
+    color: #00C292;
+    margin: 30px  0px 0px 20px;
+}
+
+.AssetsCards #span1, #span4{
+    color: red;
+    font-size:15px;
+    margin-left: 10px;
+}
+
+.AssetsCards #span2 ,#span3{
+    color: #2A944A;
+    font-size:15px;
+    margin-left: 10px;
+}

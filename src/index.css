@@ -1,3 +1,5 @@
+/* @import url("https://cdn.syncfusion.com/ej2/material.css"); */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,37 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+#settingLogo{
+  position: fixed;
+  background-color: #1A97F5;
+  color: white;
+  right: 20px;
+  bottom: 20px;
+  font-size: 33px;
+  font-weight: bolder;
+  padding: 5px;
+  z-index: 99999;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#settingLogo:hover{
+  background-color: white;
+  color: #1A97F5;
 }

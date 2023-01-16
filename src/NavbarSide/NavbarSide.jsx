@@ -42,7 +42,7 @@ const NavbarSide = ({navbarSide}) => {
         </ul>
         <h3>APPS</h3>
         <ul>
-          <li onClick={()=>navigate("/")}>
+          <li onClick={()=>navigate("/calendar")}>
             <AiOutlineCalendar />
             Calendar
           </li>

@@ -14,13 +14,10 @@
 .Ecommerce #firstLine #Earnings{
     background-color: white;
     width: 25pc;
-    height: 25vh;
+    /* height: 25vh; */
     color: rgb(87, 85, 85);
-    border-radius: 20px;
-}
-
-#Earnings{
     margin-right: 100px;
+    border-radius: 20px;
 }
 
 #EarningFirst{

@@ -1,21 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import "./Customer.css";
 import customersData from "./CustomerData";
+import { IoIosArrowBack } from "react-icons/io";
+import { MdOutlineNavigateNext } from "react-icons/md";
+import { AiFillStepForward, AiFillStepBackward } from "react-icons/ai";
 const Customer = () => {
-  const [CustomerData,setCustomerData] = useState([])
-  const [pageNo,setPageNo] = useState(0)
-  const handle = () => {
-    console.log(customersData);
-    // setPageNo()
-  };
+  const [currentPage, setcurrentPage] = useState(1);
+  const [perPage, setPerPage] = useState(12);
+  const lastPage = currentPage * perPage;
+  const firstPage = lastPage - perPage;
 
-  useEffect(()=>{
-    setCustomerData(customersData)
-  })
-  const pageNoIncrease = (e)=>{
-    setPageNo(Number(e.target.name))
-    // console.log(typeof(e.target.name))
+  const countPages = Math.ceil(customersData.length / perPage);
+
+  let pages = [];
+  for (let i = 1; i <= Math.ceil(customersData.length / perPage); i++) {
+    pages.push(i);
   }
+
   return (
     <div className="Customers">
       <h3>Page</h3>
@@ -33,7 +34,7 @@ const Customer = () => {
           <th>Location</th>
           <th>Customer ID</th>
         </tr>
-        {CustomerData.slice(pageNo,pageNo+12).map((curr) => {
+        {customersData.slice(firstPage, lastPage).map((curr) => {
           return (
             <tr>
               <td>
@@ -47,6 +48,7 @@ const Customer = () => {
                 <img
                   src={curr.CustomerImage}
                   className="CustomerImg"
+                  alt="CustomerImg"
                   width="35px"
                 />
                 <div className="customerName">
@@ -69,16 +71,49 @@ const Customer = () => {
               <td>{curr.Location}</td>
               <td>{curr.CustomerID}</td>
             </tr>
-          ); 
+          );
         })}
       </table>
-        <div className="Pagination">
-          <button onClick={pageNoIncrease} name="0">1</button>
-          <button onClick={pageNoIncrease} name="12">2</button>
-          <button onClick={pageNoIncrease} name="24">3</button>
-          <button onClick={pageNoIncrease} name="36">4</button>
+      <div className="pagesBtnContainer">
+        <div>
+          <AiFillStepBackward
+            onClick={() => {
+              setcurrentPage(1);
+            }}
+          />
+          <IoIosArrowBack
+            onClick={() => {
+              setcurrentPage(currentPage - 1);
+            }}
+          />
+          {pages.map((curr, index) => {
+            return (
+              <button
+                onClick={() => {
+                  setcurrentPage(curr);
+                }}
+                key={index}
+                className={curr === currentPage ? "active" : ""}
+              >
+                {curr}
+              </button>
+            );
+          })}
+          <MdOutlineNavigateNext
+            onClick={() => {
+              setcurrentPage(currentPage + 1);
+            }}
+          />
+          <AiFillStepForward
+            onClick={() => {
+              setcurrentPage(countPages);
+            }}
+          />
         </div>
-      <button onClick={handle}>Click Me</button>
+        <p>
+          {currentPage} of {countPages} pages ({customersData.length} items){" "}
+        </p>
+      </div>
     </div>
   );
 };

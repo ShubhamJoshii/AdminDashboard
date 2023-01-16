@@ -1,8 +1,10 @@
 
 .NavbarSide{
     background-color: #33373E;
+    /* height: 120vh; */
+    /* width: 17.2vw; */
     width: 18vw;
-    height: 120vh;
+    height: 98vh;
     color: rgba(255, 255, 255, 0.756);
     padding-left: 10px;
     padding: 10px;

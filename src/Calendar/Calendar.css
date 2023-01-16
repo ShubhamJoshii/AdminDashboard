@@ -1,0 +1,19 @@
+.Calendar {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 20px 70px 20px 50px;
+  }
+  
+  .Calendar h3 {
+    color: rgb(136, 124, 124);
+    margin: 0;
+    font-weight: 400;
+  }
+  .Calendar h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    /* color: rgb(184, 169, 169); */
+  }

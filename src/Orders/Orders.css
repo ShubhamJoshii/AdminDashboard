@@ -25,3 +25,29 @@
 #productImg{
     margin: 10px;
 }
+.pagesBtnContainer{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    color: #0000006e;
+    justify-content:space-between;
+}
+
+.pagesBtnContainer div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.pagesBtnContainer button{
+    border: none;
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #E73571;
+    color: white;
+}

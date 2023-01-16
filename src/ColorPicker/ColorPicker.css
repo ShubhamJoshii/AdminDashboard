@@ -30,12 +30,31 @@
 
 .ColorPickers h1{
     text-align: center;
+}
+
+#ColorPicker p{
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: 300px;
 
 }
 
-#color{
-    width: 300px;
-    height: 30px;
+#ColorPicker p input{
+    padding: 4px 15px;
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    outline: 0;
+}
 
-    margin: 30px auto 50px;
+/* #ColorPicker p input:focus{
+    width: 300px;
+    border-bottom: 3px solid red; 
+} */
+
+#color{
+    width: 450px;
+    /* height: 30px; */
+    margin: 30px auto 10px;
 }

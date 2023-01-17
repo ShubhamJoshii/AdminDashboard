@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./NavbarSide.css";
-import { RiShoppingBag3Line } from "react-icons/ri";
+import { RiShoppingBag3Line, RiCloseCircleLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import { navbarPagesData, navbarAppsData, navbarCharts } from "./NavbarData";
 const NavbarSide = ({ navbarSide, themeColor}) => {
@@ -14,7 +14,7 @@ const NavbarSide = ({ navbarSide, themeColor}) => {
       className="NavbarSide"
       style={navbarSide === true ? { display: "block" } : { display: "none" }}
     >
-      <div id="companyLogo">SHUBHAM JOSHI</div>
+      <div id="companyLogo">SHUBHAM JOSHI <RiCloseCircleLine id="closedNavbar"/></div>
       <div className="dashboard">
         <h3>DASHBOARD</h3>
         <ul>

@@ -89,12 +89,13 @@ code {
 
 .Responsive100{
   width: 100vw;
-  position: fixed;
+  /* position: fixed; */
   left: 0vw;
   top: 60px;
   background: var(--BGDarkcolor);
   min-height: 94vh;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
+  padding: 10px 0px;
 }
 
 #allRightReserved{

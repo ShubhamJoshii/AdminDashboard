@@ -15,7 +15,7 @@ import Bars from "./Bar/Bar";
 import Pies from "./Pie/Pie";
 import Calendar from "./Calendar/Calendar";
 const App = () => {
-  const [navbarSide, setNavbarSide] = useState(true);
+  const [navbarSide, setNavbarSide] = useState(false);
   const [settingShow, setSettingShow] = useState(false);
   const [themeColor,setThemeColor] = useState("#03a9f4");
   const [darkLightTheme , setDarkLightTheme] = useState(true);

@@ -8,15 +8,18 @@
     position: relative;
     /* left: 50px; */
     top: 10vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
 
 
 .Ecommerce #firstLine #Earnings{
     background-color: white;
     width: 25pc;
-    /* height: 25vh; */
+    height: 200px;
     color: rgb(87, 85, 85);
-    margin-right: 100px;
     border-radius: 20px;
 }
 
@@ -69,7 +72,7 @@
 
 .AssetsCards{
     width: 15pc;
-    height: 23vh;
+    height: 160px;
     /* background-color:rgba(255, 255, 255, 0.158); */
     background-color:var(--NavbarSideH3);
     margin-bottom: 20px;
@@ -142,4 +145,14 @@
     color: #2A944A;
     font-size:15px;
     margin-left: 10px;
+}
+
+@media only screen and (max-width:496px){
+    .AssetsCards{
+        width:10pc;
+    }
+    .Ecommerce #firstLine #Earnings{
+        /* margin-right: 5px; */
+        width: 300px;
+    }
 }

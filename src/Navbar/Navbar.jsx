@@ -9,9 +9,7 @@ const Navbar = ({ setNavbarSide, navbarSide,themeColor }) => {
   return (
     <>
       <div
-        className={
-          navbarSide === true ? "Navbar navbarResponsive82" : "Navbar navbarResponsive100"
-        }
+        className={navbarSide === true ? "Navbar navbarResponsive82" : "Navbar navbarResponsive100"}
         >
         <RxHamburgerMenu
           style={{color:themeColor}}

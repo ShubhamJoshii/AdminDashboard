@@ -4,7 +4,7 @@ import {MdSupervisedUserCircle} from "react-icons/md"
 import {AiOutlineShoppingCart} from "react-icons/ai"
 import {BiBarChart} from "react-icons/bi"
 import {FaSyncAlt} from "react-icons/fa"
-const Ecommerce = () => {
+const Ecommerce = ({themeColor}) => {
   return (
     <div className="Ecommerce">
       <div id="firstLine">
@@ -14,9 +14,9 @@ const Ecommerce = () => {
               <h3>Earnings</h3>
               <h2>₹ 10,20,000</h2>
             </div>
-            <a>₹</a>
+            <a style={{background:themeColor}}>₹</a>
           </div>
-          <button>Download</button>
+          <button style={{background:themeColor}}>Download</button>
         </div>
         <div id="Assets">
           <div className="AssetsCards">

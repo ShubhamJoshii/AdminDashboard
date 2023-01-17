@@ -17,6 +17,7 @@ import Calendar from "./Calendar/Calendar";
 const App = () => {
   const [navbarSide, setNavbarSide] = useState(true);
   const [settingShow, setSettingShow] = useState(false);
+  const [themeColor,setThemeColor] = useState("#03a9f4");
   useEffect(() => {
     console.log(navbarSide);
   }, [navbarSide]);
@@ -32,44 +33,22 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Navbar setNavbarSide={setNavbarSide} navbarSide={navbarSide} />
-        <NavbarSide navbarSide={navbarSide} />
-        <Setting setSettingShow={setSettingShow} />
+        <Navbar setNavbarSide={setNavbarSide} navbarSide={navbarSide} themeColor={themeColor}  />
+        <NavbarSide navbarSide={navbarSide} themeColor={themeColor} />
+        <Setting setSettingShow={setSettingShow} settingShow={settingShow} setThemeColor={setThemeColor} themeColor={themeColor}/>
         {/* <Pages setNavbarSide={setNavbarSide} navbarSide={navbarSide}/> */}
         <AiOutlineSetting
           id="settingLogo"
+          style={{background:themeColor}}
           onClick={() => {
             setSettingShow(!settingShow);
           }}
         />
-        <div
-          style={
-            navbarSide === true
-              ? {
-                  width: "82vw",
-                  position: "fixed",
-                  left: "19vw",
-                  top: "60px",
-                  background: "#20232A",
-                  height: "94vh",
-                  padding: "10px 20px",
-                  overflow: "scroll",
-                }
-              : {
-                  width: "100vw",
-                  position: "block",
-                  left: "0vw",
-                  top: "60px",
-                  background: "#20232A",
-                  height: "94vh",
-                  padding: "10px 20px",
-                }
-          }
-        >
+        <div className={navbarSide === true ? "Responsive82" : "Responsive100"} >
           <Routes>
-            <Route path="/" element={<Ecommerce />} />
-            <Route path="/AdminDashboard" element={<Ecommerce />} />
-            <Route path="/ecommerce" element={<Ecommerce />} />
+            <Route path="/" element={<Ecommerce themeColor={themeColor}/>} />
+            <Route path="/AdminDashboard" element={<Ecommerce themeColor={themeColor}/>} />
+            <Route path="/ecommerce" element={<Ecommerce themeColor={themeColor}/>} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/customers" element={<Customer />} />
             <Route path="/employees" element={<Employees />} />

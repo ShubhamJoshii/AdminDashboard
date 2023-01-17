@@ -5,16 +5,22 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { BsChatLeft, BsBell } from "react-icons/bs";
 import { RiArrowDownSLine } from "react-icons/ri";
 import Avatar from "../Data/avatar.jpg";
-const Navbar = ({setNavbarSide,navbarSide}) => {
-
+const Navbar = ({ setNavbarSide, navbarSide,themeColor }) => {
   return (
     <>
-      <div className="Navbar" style={navbarSide === true ? {width:"82vw",position:"fixed",left:"18vw"}:{width:"100vw",position:"block",left:"0vw"} }>
+      <div
+        className={
+          navbarSide === true ? "Navbar navbarResponsive82" : "Navbar navbarResponsive100"
+        }
+        >
         <RxHamburgerMenu
+          style={{color:themeColor}}
           className="navbarLogo burger"
           onClick={() => setNavbarSide(!navbarSide)}
         />
-        <ul>
+        <ul
+          style={{color:themeColor}}
+        >
           <li>
             <AiOutlineShoppingCart className="navbarLogo" />
           </li>

@@ -27,11 +27,29 @@ code {
   background: #555; 
 }
 
+.LightMode{
+  --BGDarkcolor : #e0e5e5;
+  --BGLightcolor : #ffffffaf;
+  --hoverLogoBG : rgb(0, 0, 0);
+  --TextColorW: black;
+  --TextColorB: white;
+  --NavbarSideH3 : #2827278a;
+}
+
+.DarkMode{
+  --BGDarkcolor : #20232A;
+  --BGLightcolor : #32373e;
+  --hoverLogoBG : white;
+  --TextColorW: white;
+  --TextColorB: rgb(0, 0, 0);
+  --NavbarSideH3 : #d4d0d05d;
+
+}
 
 #settingLogo{
   position: fixed;
-  background-color: #1A97F5;
-  color: white;
+  background-color: var(--hoverLogoBG);
+  color: var(--TextColorW);
   right: 20px;
   bottom: 20px;
   font-size: 33px;
@@ -43,8 +61,7 @@ code {
 }
 
 #settingLogo:hover{
-  background-color: white;
-  color: #1A97F5;
+  background-color: var(--hoverLogoBG);
 }
 
 .navbarResponsive82{
@@ -60,36 +77,36 @@ code {
 }
 
 .Responsive82{
-  /* width:82vw;
-  position:fixed;
-  left:18vw */
   width: 82vw;
   position: fixed;
   left: 19vw;
   top: 60px;
-  background: #20232A;
+  background: var(--BGDarkcolor);
   height: 94vh;
   padding: 10px 20px;
   overflow: scroll;
 }
 
 .Responsive100{
-  /* width:100vw;
-  position:block;
-  left:0vw */
   width: 100vw;
-  position: block;
+  position: fixed;
   left: 0vw;
   top: 60px;
-  background: #20232A;
-  height: 94vh;
+  background: var(--BGDarkcolor);
+  min-height: 94vh;
   padding: 10px 20px;
+}
+
+#allRightReserved{
+  color: var(--TextColorW);
+  margin: 100px 0px 30px 0px;
+  text-align: center;
+  width: 100%;
 }
 
 @media only screen and (max-width:1100px){
   .Responsive82{
     width: 100vw;
-    left: 0;
-    
+    left: 0;   
   }
 }

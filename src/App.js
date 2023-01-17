@@ -18,6 +18,7 @@ const App = () => {
   const [navbarSide, setNavbarSide] = useState(true);
   const [settingShow, setSettingShow] = useState(false);
   const [themeColor,setThemeColor] = useState("#03a9f4");
+  const [darkLightTheme , setDarkLightTheme] = useState(true);
   useEffect(() => {
     console.log(navbarSide);
   }, [navbarSide]);
@@ -31,11 +32,11 @@ const App = () => {
   }, [settingShow]);
 
   return (
-    <div>
+    <div className={darkLightTheme === true ? "DarkMode" : "LightMode"}>
       <BrowserRouter>
         <Navbar setNavbarSide={setNavbarSide} navbarSide={navbarSide} themeColor={themeColor}  />
         <NavbarSide navbarSide={navbarSide} themeColor={themeColor} />
-        <Setting setSettingShow={setSettingShow} settingShow={settingShow} setThemeColor={setThemeColor} themeColor={themeColor}/>
+        <Setting setSettingShow={setSettingShow} settingShow={settingShow} setDarkLightTheme={setDarkLightTheme} setThemeColor={setThemeColor} themeColor={themeColor}/>
         {/* <Pages setNavbarSide={setNavbarSide} navbarSide={navbarSide}/> */}
         <AiOutlineSetting
           id="settingLogo"
@@ -62,13 +63,8 @@ const App = () => {
             {/* <Route path="/" element={} /> */}
             {/* <Route path="/" element={} /> */}
           </Routes>
-          <p
-            style={{
-              color: "white",
-              margin: "100px 0px 30px 0px",
-              textAlign: "center",
-              width: "100%",
-            }}
+          <p  id="allRightReserved"
+
           >
             All Right Reseved @ 2023 by ShubhamJoshii.com
           </p>

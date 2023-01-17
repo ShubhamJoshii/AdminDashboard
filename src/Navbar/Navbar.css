@@ -1,11 +1,8 @@
 .Navbar{
     display: flex;
-    background-color: #20232A;
+    background-color: var(--BGDarkcolor);
     align-items: center;
     height: 60px;
-    /* position: fixed;
-    width: 80vw;
-    left: 20vw; */
 }
 
 .Navbar ul{
@@ -16,7 +13,6 @@
     justify-content: space-between;
     width: 300px;
     right: 0px;
-    color:#1C7BC2;
     margin: 10px 20px;
 }
 
@@ -26,7 +22,6 @@
 }
 
 .burger{
-    color:#1C7BC2;
     font-weight: bolder;
     padding: 10px;
     margin: 10px 30px;
@@ -38,7 +33,6 @@
     display: flex;
     align-items: center;
     padding: 10px ;
-    /* color:#1C7BC2; */
     font-weight: bolder;
     cursor: pointer;
 }

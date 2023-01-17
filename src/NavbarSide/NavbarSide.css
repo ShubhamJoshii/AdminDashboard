@@ -1,11 +1,12 @@
 
 .NavbarSide{
-    background-color: #33373E;
     /* height: 120vh; */
     /* width: 18vw; */
-    width: 225px;
+    /* color: rgba(255, 255, 255, 0.756); */
+    width: 275px;
     height: 98vh;
-    color: rgba(255, 255, 255, 0.756);
+    background-color: var(--BGLightcolor);
+    color: var(--TextColorW);
     padding-left: 10px;
     padding: 10px;
     z-index: 9999;
@@ -25,7 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #33373E;
+    background-color: var(--BGLightcolor);
     z-index: 99999;
 }
 
@@ -36,11 +37,9 @@
 }
 
 .NavbarSide h3{
-    color: rgba(255, 255, 255, 0.543);
+    color: var(--NavbarSideH3);
     margin: 10px 10px 5px 10px;
-    font-weight: 600;
-    /* margin-left: 20px; */
-}
+    font-weight: 600;}
 
 .NavbarSide ul{
     margin-top: 0px;
@@ -62,22 +61,16 @@
 }
 
 .NavbarSide ul li:hover{
-    background-color: rgb(255, 255, 255);
-    color: black;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: var(--TextColorW);
+    color: var(--TextColorB);
+    /* color: black; */
     border-radius: 10px;
 }
 
 .clickShow{
-    background-color: rgb(0, 225, 255);
+    /* background-color: rgb(0, 225, 255); */
     border-radius: 10px;
-    color: white;
+    color: var(--TextColorW);
     font-weight: bolder;
 }
-
-/* @media only screen and (max-width:1100px){
-    .NavbarSide{
-        width: 100vw ;
-        position: relative;
-
-    }
-} */

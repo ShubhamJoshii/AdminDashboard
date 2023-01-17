@@ -31,8 +31,8 @@ const customersData = [
   {
     CustomerID: 1003,
 
-    CustomerName: "Andrew McDownland",
-    CustomerEmail: "andrew@gmail.com",
+    CustomerName: "Shubham Joshi",
+    CustomerEmail: "shubhamjoshii676@gmail.com",
     ProjectName: "Real Homes WP Theme",
     Status: "Pending",
     CustomerImage: avatar4,
@@ -96,8 +96,8 @@ const customersData = [
   {
     CustomerID: 1008,
 
-    CustomerName: "Andrew McDownland",
-    CustomerEmail: "andrew@gmail.com",
+    CustomerName: "Shubham Joshi",
+    CustomerEmail: "shubhamjoshii676@gmail.com",
     ProjectName: "Real Homes WP Theme",
     Status: "Pending",
     CustomerImage: avatar4,
@@ -161,8 +161,8 @@ const customersData = [
   {
     CustomerID: 1013,
 
-    CustomerName: "Andrew McDownland",
-    CustomerEmail: "andrew@gmail.com",
+    CustomerName: "Shubham Joshi",
+    CustomerEmail: "shubhamjoshii676@gmail.com",
     ProjectName: "Real Homes WP Theme",
     Status: "Pending",
     CustomerImage: avatar4,
@@ -226,8 +226,8 @@ const customersData = [
   {
     CustomerID: 1018,
 
-    CustomerName: "Andrew McDownland",
-    CustomerEmail: "andrew@gmail.com",
+    CustomerName: "Shubham Joshi",
+    CustomerEmail: "shubhamjoshii676@gmail.com",
     ProjectName: "Real Homes WP Theme",
     Status: "Pending",
     CustomerImage: avatar4,
@@ -291,8 +291,8 @@ const customersData = [
   {
     CustomerID: 1023,
 
-    CustomerName: "Andrew McDownland",
-    CustomerEmail: "andrew@gmail.com",
+    CustomerName: "Shubham Joshi",
+    CustomerEmail: "shubhamjoshii676@gmail.com",
     ProjectName: "Real Homes WP Theme",
     Status: "Pending",
     CustomerImage: avatar4,
@@ -356,8 +356,8 @@ const customersData = [
   {
     CustomerID: 1028,
 
-    CustomerName: "Andrew McDownland",
-    CustomerEmail: "andrew@gmail.com",
+    CustomerName: "Shubham Joshi",
+    CustomerEmail: "shubhamjoshii676@gmail.com",
     ProjectName: "Real Homes WP Theme",
     Status: "Pending",
     CustomerImage: avatar4,
@@ -421,8 +421,8 @@ const customersData = [
   {
     CustomerID: 1033,
 
-    CustomerName: "Andrew McDownland",
-    CustomerEmail: "andrew@gmail.com",
+    CustomerName: "Shubham Joshi",
+    CustomerEmail: "shubhamjoshii676@gmail.com",
     ProjectName: "Real Homes WP Theme",
     Status: "Pending",
     CustomerImage: avatar4,
@@ -486,8 +486,8 @@ const customersData = [
   {
     CustomerID: 1038,
 
-    CustomerName: "Andrew McDownland",
-    CustomerEmail: "andrew@gmail.com",
+    CustomerName: "Shubham Joshi",
+    CustomerEmail: "shubhamjoshii676@gmail.com",
     ProjectName: "Real Homes WP Theme",
     Status: "Pending",
     CustomerImage: avatar4,

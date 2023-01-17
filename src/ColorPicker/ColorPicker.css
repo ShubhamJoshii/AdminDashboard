@@ -21,10 +21,11 @@
 
 .ColorPickers{
     display: flex;
-    width: 60%;
+    width: 50%;
     margin: auto;
     justify-content:space-between;
     align-items: center;
+    gap: 20px;
     /* text-align: center; */
 }
 
@@ -40,12 +41,29 @@
 
 }
 
+#colorInputCopy svg{
+    cursor: pointer;
+}
+
 #ColorPicker p input{
     padding: 4px 15px;
     font-size: 17px;
     font-weight: 500;
     border: none;
     outline: 0;
+}
+
+#clipboardAlert{
+    display: none;
+    position: fixed;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    bottom: 20px;
+    left: 44%;
+    width: 12%;
+    background-color: rgba(0, 0, 0, 0.388);
+    padding: 10px 10px;
 }
 
 /* #ColorPicker p input:focus{
@@ -57,4 +75,32 @@
     width: 450px;
     /* height: 30px; */
     margin: 30px auto 10px;
+}
+
+@media only screen and (max-width:1000px) {
+    .ColorPickers{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:757px) {
+    .ColorPickers{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:637px) {
+    #color{
+        width: 100%;
+    }
+    #color img{
+        width: 100%;
+    }
+    .ColorPickers{
+        flex-direction: column;
+    }
+
+    #clipboardAlert{
+        /* display: block; */
+        left: 20%;
+        width: 40%;    
+    }
 }

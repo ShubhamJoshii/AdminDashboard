@@ -89,7 +89,7 @@ code {
 
 .Responsive100{
   width: 100vw;
-  /* position: fixed; */
+  position: absolute;
   left: 0vw;
   top: 60px;
   background: var(--BGDarkcolor);

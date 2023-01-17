@@ -1,0 +1,81 @@
+#UserProfile{
+    z-index: 9999;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    width: 350px;
+    background-color: var(--BGLightcolor);
+    color: var(--TextColorW);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#UserProfile h3,#UserProfile h4,#UserProfile p{
+    margin: 0;
+}
+
+#userProfileCross{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:30px;
+    font-weight:bolder;
+    margin-bottom: 20px;
+}
+
+#userProfileCross svg{
+    color: #B6A7A7;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#userProfileCross svg:hover{
+    background-color: white;
+}
+
+
+#userData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    /* margin: 0; */
+}
+
+#userData img{
+    border-radius: 50%;
+}
+
+/* #userData */
+
+.profileTopic{
+    display: flex;
+    gap: 30px;
+    margin: 40px;
+}
+
+.profileTopic svg{
+    background-color: aqua;
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#UserProfile button{
+    width: 100%;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+}
+
+#userProfile button:hover{
+    transform: scale(1.5);
+}

@@ -5,9 +5,9 @@ import {
   Area,
   XAxis,
   YAxis,
-  Legend
+  Legend,
 } from "recharts";
-import "./Area.css"
+import "./Area.css";
 const Data = [
   {
     year: 2005,
@@ -56,16 +56,34 @@ const Data = [
 const Areas = () => {
   return (
     <div id="AreasChart">
-        <h3>Chart</h3>
-        <h2>Area</h2>
+      <h3>Chart</h3>
+      <h2>Area</h2>
       <ResponsiveContainer width="90%" aspect={2}>
         <AreaChart data={Data}>
           <XAxis dataKey="year" interval={"preserveStartEnd"} />
           <YAxis tickFormatter={(value) => value + "%"} />
-          <Area type="monotone" dataKey="India" stroke="blue" fill="blue" opacity={1}/>
-          <Area type="monotone" dataKey="Germany" fill="aqua" stroke="aqua" opacity={0.7}/>
-          <Area type="monotone" dataKey="England" fill="red" stroke="red" opacity={0.5}/>
-          <Legend id="arealegend"/>
+          <Area
+            type="monotone"
+            dataKey="India"
+            stroke="blue"
+            fill="blue"
+            opacity={1}
+          />
+          <Area
+            type="monotone"
+            dataKey="Germany"
+            fill="aqua"
+            stroke="aqua"
+            opacity={0.7}
+          />
+          <Area
+            type="monotone"
+            dataKey="England"
+            fill="red"
+            stroke="red"
+            opacity={0.5}
+          />
+          <Legend id="arealegend" />
         </AreaChart>
       </ResponsiveContainer>
     </div>

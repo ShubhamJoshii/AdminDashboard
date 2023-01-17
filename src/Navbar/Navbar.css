@@ -3,6 +3,8 @@
     background-color: var(--BGDarkcolor);
     align-items: center;
     height: 60px;
+    position: fixed;
+    z-index: 9;
 }
 
 .Navbar ul{

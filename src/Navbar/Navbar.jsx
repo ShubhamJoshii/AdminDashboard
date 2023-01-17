@@ -5,20 +5,22 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { BsChatLeft, BsBell } from "react-icons/bs";
 import { RiArrowDownSLine } from "react-icons/ri";
 import Avatar from "../Data/avatar.jpg";
-const Navbar = ({ setNavbarSide, navbarSide,themeColor }) => {
+const Navbar = ({ setNavbarSide, navbarSide, themeColor,userProfile, setUserProfile }) => {
   return (
     <>
       <div
-        className={navbarSide === true ? "Navbar navbarResponsive82" : "Navbar navbarResponsive100"}
-        >
+        className={
+          navbarSide === true
+            ? "Navbar navbarResponsive82"
+            : "Navbar navbarResponsive100"
+        }
+      >
         <RxHamburgerMenu
-          style={{color:themeColor}}
+          style={{ color: themeColor }}
           className="navbarLogo burger"
           onClick={() => setNavbarSide(!navbarSide)}
         />
-        <ul
-          style={{color:themeColor}}
-        >
+        <ul style={{ color: themeColor }}>
           <li>
             <AiOutlineShoppingCart className="navbarLogo" />
           </li>
@@ -28,7 +30,9 @@ const Navbar = ({ setNavbarSide, navbarSide,themeColor }) => {
           <li>
             <BsChatLeft className="navbarLogo" />
           </li>
-          <li>
+          <li onClick={()=>{
+            setUserProfile(!userProfile)
+          }}>
             <img src={Avatar} alt="DP" width="35px" />
             Hi, Shubham <RiArrowDownSLine />
           </li>

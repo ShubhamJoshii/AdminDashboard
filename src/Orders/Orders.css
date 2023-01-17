@@ -51,3 +51,12 @@
     background-color: #E73571;
     color: white;
 }
+
+@media only screen and (max-width:740px){
+    .Orders{
+        margin: 10px;
+        padding: 40px 20px;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}

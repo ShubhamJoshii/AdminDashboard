@@ -1,6 +1,14 @@
-import React from 'react'
-import {ResponsiveContainer,BarChart,Bar, XAxis, YAxis, Legend, Tooltip} from "recharts"
-import "./Bar.css"
+import React from "react";
+import {
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Legend,
+  Tooltip,
+} from "recharts";
+import "./Bar.css";
 const Bars = () => {
   const Data = [
     {
@@ -23,22 +31,21 @@ const Bars = () => {
     },
   ];
   return (
-    <div id='Bar'>
-        <h3>Chart</h3>
-        <h2>Bar</h2>
-        <ResponsiveContainer width="90%" aspect={2} >
-          <BarChart data={Data}>
-            <XAxis dataKey="year"/>
-            <YAxis tickFormatter={(value) => value + "%"}/>
-            <Tooltip  />
-            <Bar dataKey="England" fill='#00BDAE'/>
-            <Bar dataKey="Germany" fill='lightGreen'/>
-            <Bar dataKey="India"  fill='#357CD2'/>
-            <Legend id="arealegend"/>
-          </BarChart>
-        </ResponsiveContainer>
-
+    <div id="Bar">
+      <h3>Chart</h3>
+      <h2>Bar</h2>
+      <ResponsiveContainer width="90%" aspect={2}>
+        <BarChart data={Data}>
+          <XAxis dataKey="year" />
+          <YAxis tickFormatter={(value) => value + "%"} />
+          <Tooltip />
+          <Bar dataKey="England" fill="#00BDAE" />
+          <Bar dataKey="Germany" fill="lightGreen" />
+          <Bar dataKey="India" fill="#357CD2" />
+          <Legend id="arealegend" />
+        </BarChart>
+      </ResponsiveContainer>
     </div>
-  )
-}
-export default Bars
+  );
+};
+export default Bars;

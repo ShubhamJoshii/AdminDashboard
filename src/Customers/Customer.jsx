@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import "./Customer.css";
 import customersData from "./CustomerData";
 import { IoIosArrowBack } from "react-icons/io";
@@ -6,10 +6,10 @@ import { MdOutlineNavigateNext } from "react-icons/md";
 import { AiFillStepForward, AiFillStepBackward } from "react-icons/ai";
 const Customer = () => {
   const [currentPage, setcurrentPage] = useState(1);
-  const [perPage, setPerPage] = useState(12);
+  // const [perPage, setPerPage] = useState(12);
+  const perPage = 12;
   const lastPage = currentPage * perPage;
   const firstPage = lastPage - perPage;
-
   const countPages = Math.ceil(customersData.length / perPage);
 
   let pages = [];

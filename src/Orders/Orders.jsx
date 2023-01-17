@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import "./Orders.css";
 import ordersData from "./OrderData";
 import { AiFillStepForward, AiFillStepBackward } from "react-icons/ai";
@@ -6,7 +6,8 @@ import { IoIosArrowBack } from "react-icons/io";
 import { MdOutlineNavigateNext } from "react-icons/md";
 const Orders = () => {
   const [currentPage, setcurrentPage] = useState(1);
-  const [perPage, setPerPage] = useState(12);
+  const perPage = 12;
+  // const [perPage, setPerPage] = useState(12);
 
   const lastPage = currentPage * perPage;
   const firstPage = lastPage - perPage;

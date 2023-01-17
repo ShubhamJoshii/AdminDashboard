@@ -41,13 +41,13 @@ export const navbarAppsData = [
     },
     {
       id:5,
-      navigate: "/",
+      navigate: "/kanban",
       logo: BsKanban,
       text: "Kanban",
     },
     {
         id:6,
-        navigate: "/",
+        navigate: "/editor",
         logo: FaRegEdit,
         text: "Editor",
     },

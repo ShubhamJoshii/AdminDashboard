@@ -3,7 +3,7 @@ import "./NavbarSide.css";
 import { RiShoppingBag3Line, RiCloseCircleLine } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 import { navbarPagesData, navbarAppsData, navbarCharts } from "./NavbarData";
-const NavbarSide = ({ navbarSide, themeColor}) => {
+const NavbarSide = ({ setNavbarSide, navbarSide, themeColor }) => {
   const [pageComp, setPageComp] = useState(0);
   let navigate = useNavigate();
   useEffect(() => {
@@ -14,15 +14,27 @@ const NavbarSide = ({ navbarSide, themeColor}) => {
       className="NavbarSide"
       style={navbarSide === true ? { display: "block" } : { display: "none" }}
     >
-      <div id="companyLogo">SHUBHAM JOSHI <RiCloseCircleLine id="closedNavbar"/></div>
+      <div id="companyLogo">
+        SHUBHAM JOSHI{" "}
+        <RiCloseCircleLine
+          id="closedNavbar"
+          onClick={() => {
+            setNavbarSide(!navbarSide);
+          }}
+        />
+      </div>
       <div className="dashboard">
         <h3>DASHBOARD</h3>
         <ul>
-          <li onClick={() => {navigate("/")
-            setPageComp(0);
-          }}
-           style={0 === pageComp ? {background:themeColor} : {background:""}}
-           className={0 === pageComp ? "clickShow" : ""}
+          <li
+            onClick={() => {
+              navigate("/");
+              setPageComp(0);
+            }}
+            style={
+              0 === pageComp ? { background: themeColor } : { background: "" }
+            }
+            className={0 === pageComp ? "clickShow" : ""}
           >
             <RiShoppingBag3Line /> Ecommerce
           </li>
@@ -36,7 +48,11 @@ const NavbarSide = ({ navbarSide, themeColor}) => {
                   navigate(curr.navigate);
                   setPageComp(curr.id);
                 }}
-           style={curr.id === pageComp ? {background:themeColor} : {background:""}}
+                style={
+                  curr.id === pageComp
+                    ? { background: themeColor }
+                    : { background: "" }
+                }
                 className={curr.id === pageComp ? "clickShow" : ""}
               >
                 <curr.logo /> {curr.text}
@@ -46,14 +62,18 @@ const NavbarSide = ({ navbarSide, themeColor}) => {
         </ul>
         <h3>APPS</h3>
         <ul>
-          {navbarAppsData.map((curr,id) => {
+          {navbarAppsData.map((curr, id) => {
             return (
               <li
                 onClick={() => {
                   navigate(curr.navigate);
                   setPageComp(curr.id);
                 }}
-           style={curr.id === pageComp ? {background:themeColor} : {background:""}}
+                style={
+                  curr.id === pageComp
+                    ? { background: themeColor }
+                    : { background: "" }
+                }
                 className={curr.id === pageComp ? "clickShow" : ""}
               >
                 <curr.logo />
@@ -64,14 +84,18 @@ const NavbarSide = ({ navbarSide, themeColor}) => {
         </ul>
         <h3>CHARTS</h3>
         <ul>
-          {navbarCharts.map((curr,id) => {
+          {navbarCharts.map((curr, id) => {
             return (
               <li
                 onClick={() => {
                   navigate(curr.navigate);
                   setPageComp(curr.id);
                 }}
-           style={curr.id === pageComp ? {background:themeColor} : {background:""}}
+                style={
+                  curr.id === pageComp
+                    ? { background: themeColor }
+                    : { background: "" }
+                }
                 className={curr.id === pageComp ? "clickShow" : ""}
               >
                 <curr.logo />

@@ -14,11 +14,16 @@ import ColorPicker from "./ColorPicker/ColorPicker";
 import Bars from "./Bar/Bar";
 import Pies from "./Pie/Pie";
 import Calendar from "./Calendar/Calendar";
+import Kanban from "./Kanban/Kanban"
+import Editor from "./Editor/Editor"
+import UserProfile from "./UserProfile/UserProfile";
+
 const App = () => {
   const [navbarSide, setNavbarSide] = useState(false);
   const [settingShow, setSettingShow] = useState(false);
   const [themeColor,setThemeColor] = useState("#03a9f4");
   const [darkLightTheme , setDarkLightTheme] = useState(true);
+  const [userProfile,setUserProfile] = useState(false);
   useEffect(() => {
     console.log(navbarSide);
   }, [navbarSide]);
@@ -34,9 +39,10 @@ const App = () => {
   return (
     <div className={darkLightTheme === true ? "DarkMode" : "LightMode"}>
       <BrowserRouter>
-        <Navbar setNavbarSide={setNavbarSide} navbarSide={navbarSide} themeColor={themeColor}  />
-        <NavbarSide navbarSide={navbarSide} themeColor={themeColor} />
-        <Setting setSettingShow={setSettingShow} settingShow={settingShow} setDarkLightTheme={setDarkLightTheme} setThemeColor={setThemeColor} themeColor={themeColor}/>
+        <Navbar setNavbarSide={setNavbarSide} userProfile={userProfile} setUserProfile={setUserProfile}   navbarSide={navbarSide} themeColor={themeColor}  />
+        <NavbarSide setNavbarSide={setNavbarSide} navbarSide={navbarSide} themeColor={themeColor} />
+        <Setting setSettingShow={setSettingShow} setDarkLightTheme={setDarkLightTheme} setThemeColor={setThemeColor} themeColor={themeColor} />
+        <UserProfile userProfile={userProfile} setUserProfile={setUserProfile} themeColor={themeColor}/>
         {/* <Pages setNavbarSide={setNavbarSide} navbarSide={navbarSide}/> */}
         <AiOutlineSetting
           id="settingLogo"
@@ -59,15 +65,11 @@ const App = () => {
             <Route path="/bars" element={<Bars />} />
             <Route path="/pie" element={<Pies />} />
             <Route path="/calendar" element={<Calendar />} />
-            {/* <Route path="/" element={} /> */}
-            {/* <Route path="/" element={} /> */}
+            <Route path="/Kanban" element={<Kanban />} />
+            <Route path="/editor" element={<Editor />} />
             {/* <Route path="/" element={} /> */}
           </Routes>
-          <p  id="allRightReserved"
-
-          >
-            All Right Reseved @ 2023 by ShubhamJoshii.com
-          </p>
+          <p  id="allRightReserved">All Right Reseved @ 2023 by ShubhamJoshii.com </p>
         </div>
       </BrowserRouter>
     </div>

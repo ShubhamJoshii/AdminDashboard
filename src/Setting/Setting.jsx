@@ -1,25 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Setting.css";
 import { RiCloseCircleLine } from "react-icons/ri";
 import { CirclePicker } from "react-color";
-const Setting = ({ setsettingShow,settingShow,setDarkLightTheme ,setThemeColor ,themeColor}) => {
-  // const show = false;
-  // const [DarkTheme,setDarkTheme] = useState(true)
+const Setting = ({setSettingShow,setDarkLightTheme ,setThemeColor ,themeColor}) => {
   const handleColorSelect = (color) => {
     setThemeColor(color.hex)
-    // console.log(color.hex);
   };
-  const handleCross = ()=>{
-    setsettingShow(false);
-  }
-
+  
   return (
     <div className="Setting">
       <div id="settingText">
         <h1>Settings </h1>
         <RiCloseCircleLine
           id="CROSSbtn"
-          onClick={handleCross}
+          onClick={()=>{setSettingShow(false)}}
         />
       </div>
       <div id="themeOption">

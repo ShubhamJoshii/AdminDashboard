@@ -25,10 +25,12 @@ const Navbar = ({ setNavbarSide, navbarSide, themeColor,userProfile, setUserProf
             <AiOutlineShoppingCart className="navbarLogo" />
           </li>
           <li>
-            <BsBell className="navbarLogo" />
+            <BsBell className="navbarLogo"/>
+            <div style={{background:"#03C9D7", width:"6px",height:"6px",position:"absolute",top:"6px",borderRadius:"50%",marginLeft:"16px",}}></div>
           </li>
           <li>
             <BsChatLeft className="navbarLogo" />
+            <div style={{background:"#FEC90F", width:"6px",height:"6px",position:"absolute",top:"6px",borderRadius:"50%",marginLeft:"16px",}}></div>
           </li>
           <li onClick={()=>{
             setUserProfile(!userProfile)

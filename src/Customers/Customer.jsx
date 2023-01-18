@@ -8,6 +8,7 @@ const Customer = () => {
   const [currentPage, setcurrentPage] = useState(1);
   // const [perPage, setPerPage] = useState(12);
   const perPage = 12;
+  let i = 0;
   const lastPage = currentPage * perPage;
   const firstPage = lastPage - perPage;
   const countPages = Math.ceil(customersData.length / perPage);
@@ -17,6 +18,24 @@ const Customer = () => {
     pages.push(i);
   }
 
+  const selectAllCustomer = ()=>{
+    let a = document.getElementsByName("checkCustomer");
+    if(i%2 === 0){
+      for (let i = 0;i< a.length;i++){
+        if(a[i].type === "checkbox"){
+          a[i].checked = true;
+        }
+      }
+      i++;
+    }else{
+      for (let i = 0;i< a.length;i++){
+        if(a[i].type === "checkbox"){
+          a[i].checked = false;
+        }
+      }
+      i++;
+    }
+  }
   return (
     <div className="Customers">
       <h3>Page</h3>
@@ -24,7 +43,7 @@ const Customer = () => {
       <table>
         <tr>
           <th>
-            <input type="checkbox" />
+            <input type="checkbox" name="checkCustomer" onClick={selectAllCustomer}/>
           </th>
           <th>Name</th>
           <th>Project Name</th>
@@ -40,8 +59,9 @@ const Customer = () => {
               <td>
                 <input
                   type="checkbox"
-                  name={curr.CustomerID}
+                  value={curr.CustomerID}
                   id="checkBoxCustomer"
+                  name="checkCustomer"
                 />
               </td>
               <td id="customerData">
@@ -62,7 +82,6 @@ const Customer = () => {
                   style={{
                     backgroundColor: curr.StatusBg,
                   }}
-                  // id="customerStatus"
                 ></div>
                 <p>{curr.Status}</p>
               </td>

@@ -16,20 +16,25 @@ code {
 
 ::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
+
 ::-webkit-scrollbar-thumb {
   background: #888; 
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
 
 .LightMode{
   --BGDarkcolor : #e0e5e5;
-  --BGLightcolor : #ffffffaf;
+  /* --BGLightcolor : #ffffffaf; */
+  --BGLightcolor : #ffffff;
   --hoverLogoBG : rgb(0, 0, 0);
   --TextColorW: black;
   --TextColorB: white;

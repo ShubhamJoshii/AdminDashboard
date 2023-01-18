@@ -15,7 +15,7 @@ const Pies = () => {
     <div id="PieChart">
       <h3>Chart</h3>
       <h2>Pie</h2>
-      <ResponsiveContainer width="90%" aspect={2}>
+      <ResponsiveContainer height="90%" aspect={2}>
         <PieChart width={730} height={250}>
           <Pie
             data={Data}

@@ -34,7 +34,7 @@ const Bars = () => {
     <div id="Bar">
       <h3>Chart</h3>
       <h2>Bar</h2>
-      <ResponsiveContainer width="90%" aspect={2}>
+      <ResponsiveContainer  height="90%" aspect={2}>
         <BarChart data={Data}>
           <XAxis dataKey="year" />
           <YAxis tickFormatter={(value) => value + "%"} />

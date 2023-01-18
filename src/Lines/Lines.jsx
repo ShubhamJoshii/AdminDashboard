@@ -58,7 +58,7 @@ const Lines = () => {
     <div className="Lines">
       <h3>Chart</h3>
       <h2>Lines</h2>
-      <ResponsiveContainer width="90%" aspect={2}>
+      <ResponsiveContainer height="90%" aspect={2}>
         <LineChart data={Data}>
           <XAxis dataKey="year" interval={"preserveStartEnd"} />
           <YAxis tickFormatter={(value) => value + "%"} />

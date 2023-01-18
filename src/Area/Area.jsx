@@ -58,7 +58,7 @@ const Areas = () => {
     <div id="AreasChart">
       <h3>Chart</h3>
       <h2>Area</h2>
-      <ResponsiveContainer width="90%" aspect={2}>
+      <ResponsiveContainer height="90%" aspect={2}>
         <AreaChart data={Data}>
           <XAxis dataKey="year" interval={"preserveStartEnd"} />
           <YAxis tickFormatter={(value) => value + "%"} />

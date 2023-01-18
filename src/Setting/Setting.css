@@ -17,6 +17,15 @@
 
 }
 
+.Setting input{
+    cursor: pointer;
+}
+
+.Setting label{
+    margin-right: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
 #settingText{
     display: flex;
     justify-content: space-between;

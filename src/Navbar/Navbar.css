@@ -52,3 +52,13 @@
     border-radius: 50%;
     margin-right: 5px;
 }
+
+@media only screen and (max-width:430px) {
+    .burger{
+        margin-left: 10px;
+    }
+    .Navbar ul{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/AdminDashboard/static/css/main.0e64ac2c.css",
-    "main.js": "/AdminDashboard/static/js/main.ae1940cb.js",
+    "main.css": "/AdminDashboard/static/css/main.43e5965d.css",
+    "main.js": "/AdminDashboard/static/js/main.c688ef2c.js",
     "static/js/787.d1cf12e5.chunk.js": "/AdminDashboard/static/js/787.d1cf12e5.chunk.js",
     "static/media/product4.jpg": "/AdminDashboard/static/media/product4.767417bea17688d6d8ce.jpg",
     "static/media/product2.jpg": "/AdminDashboard/static/media/product2.e93f12ec1b20980a1bd1.jpg",
@@ -14,12 +14,12 @@
     "static/media/avatar4.jpg": "/AdminDashboard/static/media/avatar4.f56b774f77caaf2f6921.jpg",
     "static/media/product5.jpg": "/AdminDashboard/static/media/product5.f4c5d8f991b753ca0fcc.jpg",
     "index.html": "/AdminDashboard/index.html",
-    "main.0e64ac2c.css.map": "/AdminDashboard/static/css/main.0e64ac2c.css.map",
-    "main.ae1940cb.js.map": "/AdminDashboard/static/js/main.ae1940cb.js.map",
+    "main.43e5965d.css.map": "/AdminDashboard/static/css/main.43e5965d.css.map",
+    "main.c688ef2c.js.map": "/AdminDashboard/static/js/main.c688ef2c.js.map",
     "787.d1cf12e5.chunk.js.map": "/AdminDashboard/static/js/787.d1cf12e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e64ac2c.css",
-    "static/js/main.ae1940cb.js"
+    "static/css/main.43e5965d.css",
+    "static/js/main.c688ef2c.js"
   ]
 }

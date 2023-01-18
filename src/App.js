@@ -17,6 +17,7 @@ import Calendar from "./Calendar/Calendar";
 import Kanban from "./Kanban/Kanban"
 import Editor from "./Editor/Editor"
 import UserProfile from "./UserProfile/UserProfile";
+import Notifications from "./Notifications/Notifications";
 
 const App = () => {
   const [navbarSide, setNavbarSide] = useState(false);
@@ -24,6 +25,7 @@ const App = () => {
   const [themeColor,setThemeColor] = useState("#03a9f4");
   const [darkLightTheme , setDarkLightTheme] = useState(true);
   const [userProfile,setUserProfile] = useState(false);
+  const [Notification,setNotification] = useState(false)
   useEffect(() => {
     console.log(navbarSide);
   }, [navbarSide]);
@@ -39,10 +41,11 @@ const App = () => {
   return (
     <div className={darkLightTheme === true ? "DarkMode" : "LightMode"}>
       <BrowserRouter>
-        <Navbar setNavbarSide={setNavbarSide} userProfile={userProfile} setUserProfile={setUserProfile}   navbarSide={navbarSide} themeColor={themeColor}  />
+        <Navbar setNavbarSide={setNavbarSide} userProfile={userProfile} setUserProfile={setUserProfile} Notification={Notification} setNotification={setNotification} navbarSide={navbarSide} themeColor={themeColor}  />
         <NavbarSide setNavbarSide={setNavbarSide} navbarSide={navbarSide} themeColor={themeColor} />
         <Setting setSettingShow={setSettingShow} setDarkLightTheme={setDarkLightTheme} setThemeColor={setThemeColor} themeColor={themeColor} />
         <UserProfile userProfile={userProfile} setUserProfile={setUserProfile} themeColor={themeColor}/>
+        <Notifications Notification={Notification} themeColor={themeColor}/>
         {/* <Pages setNavbarSide={setNavbarSide} navbarSide={navbarSide}/> */}
         <AiOutlineSetting
           id="settingLogo"

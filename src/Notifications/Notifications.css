@@ -1,0 +1,59 @@
+#Notifications{
+    z-index: 99999;
+    position: fixed;
+    background-color: var(--BGLightcolor);
+    width: 350px;
+    border-radius: 20px;
+    color: var(--TextColorW);
+    padding: 20px 20px 50px;
+    right: 12vw;
+    top: 60px;
+}
+
+#firstLine{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#notificationBtn{
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    border:none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#notificationBtn:hover{
+    transform: scale(1.05);
+}
+
+#notificationCards{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#Notifications h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#Notifications h3{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#NotificationsAllCards img{
+    border-radius: 50%;
+}

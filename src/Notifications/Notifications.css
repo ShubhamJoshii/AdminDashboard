@@ -57,3 +57,9 @@
 #NotificationsAllCards img{
     border-radius: 50%;
 }
+
+@media only screen and (max-width:490px) {
+    #Notifications{
+        width: 280px;
+    }   
+}

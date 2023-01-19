@@ -24,11 +24,14 @@ const Data = [
     DP: avatar4,
     textT: "Rajender completed tasks",
     texttd: "Assign her new tasks",
-  }
+  },
 ];
-const Notifications = ({Notification,themeColor}) => {
+const Notifications = ({ Notification, themeColor }) => {
   return (
-    <div id="Notifications" style={Notification === true ? {display:"block"} : {display:"none"}}>
+    <div
+      id="Notifications"
+      style={Notification === true ? { display: "block" } : { display: "none" }}
+    >
       <div id="firstLine">
         <h2>Notifications</h2>
         <p>5 New</p>
@@ -46,7 +49,9 @@ const Notifications = ({Notification,themeColor}) => {
           );
         })}
       </div>
-      <button style={{backgroundColor:themeColor}} id="notificationBtn">See all Notifications</button>
+      <button style={{ backgroundColor: themeColor }} id="notificationBtn">
+        See all Notifications
+      </button>
     </div>
   );
 };
